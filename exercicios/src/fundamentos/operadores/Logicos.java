@@ -25,6 +25,8 @@ public class Logicos {
 		System.out.println(false || true);
 		System.out.println(false || false);
 		
+		// Para uma condição XOR ser verdadeira, apenas uma condição pode ser verdadeira, ou seja,
+		// se caso mais de uma condição for verdadeira, a condição resultará em falso:
 		System.out.println("\nTabela verdade OU Exclusivo (XOR)");
 		System.out.println(true ^ true);
 		System.out.println(true ^ false);
