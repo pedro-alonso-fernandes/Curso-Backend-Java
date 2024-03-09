@@ -6,6 +6,8 @@ public class Break {
 		
 		for(int i = 0; i < 10; i++) {
 			if(i == 5) {
+				// O "break" faz com que o java saia do laço de repetição atual e 
+				// continue executando o resto do código.
 				break;
 			}
 			System.out.println("i = " + i);
