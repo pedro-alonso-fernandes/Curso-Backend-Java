@@ -6,6 +6,18 @@ public class Data {
 	String mes;
 	int ano;
 	
+	Data(int Dia, String Mes, int Ano){
+		dia = Dia;
+		mes = Mes;
+		ano = Ano;
+	}
+	
+	Data(){
+		dia = 1;
+		mes = "01";
+		ano = 1970;
+	}
+	
 	String dataFormatada() {
 		String data = "";
 		
