@@ -66,7 +66,8 @@ public class Data {
 		default:
 			// A função "format" da "String", retorna uma String formatada de acordo
 			// com as características do "printf":
-			data = String.format("%d/%s/%d", dia, mes, ano);
+			final String formato = "%d/%s/%d";
+			data = String.format(formato, this.dia, mes, ano);
 			break;
 		}
 		
