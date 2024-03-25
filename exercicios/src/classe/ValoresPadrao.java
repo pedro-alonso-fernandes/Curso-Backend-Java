@@ -17,6 +17,10 @@ public class ValoresPadrao {
 	static boolean g;
 	static char h;
 	
+	// Objetos globais também tem valor padrão:
+	// Objeto --> null
+	static Data I;
+	
 	public static void main(String[] args) {
 		
 		System.out.println("Byte = " + a);
@@ -27,7 +31,7 @@ public class ValoresPadrao {
 		System.out.println("Double = " + f);
 		System.out.println("Boolean = " + g);
 		System.out.println("Char = " + h);
-		
+		System.out.println("Objeto = " + I);
 		
 		
 	}
