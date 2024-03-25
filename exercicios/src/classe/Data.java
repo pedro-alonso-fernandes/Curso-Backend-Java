@@ -6,16 +6,22 @@ public class Data {
 	String mes;
 	int ano;
 	
-	Data(int Dia, String Mes, int Ano){
-		dia = Dia;
-		mes = Mes;
-		ano = Ano;
+	Data(int dia, String mes, int ano){
+		// O "this." representa o objeto que será usado no momento em que o
+		// código for executado
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	
 	Data(){
-		dia = 1;
-		mes = "01";
-		ano = 1970;
+		// Já o "this()" é usado para chamar outro construtor dentro de um construtor
+		// Np caso a seguir, o "this()" chama o construtor "Data(int dia, String mes, int ano)".
+		this(1, "1", 1970);
+//		dia = 1;
+//		mes = "01";
+//		ano = 1970;
+		
 	}
 	
 	String dataFormatada() {
