@@ -7,7 +7,7 @@ public class Exercicio {
 	public static void main(String[] args) {
 		
 		// Inicializar um array sem passar os valores:
-		double notasAlunoA [] = new double[4];
+		double notasAlunoA[] = new double[4];
 		System.out.println(Arrays.toString(notasAlunoA));
 		
 		notasAlunoA[0] = 7.9;
@@ -29,7 +29,7 @@ public class Exercicio {
 		System.out.println(totalA / notasAlunoA.length);
 		
 		// Inicializar um array passando os valores:
-		double notasAlunoB [] = {6.9, 8.9, 5.9, 10};
+		double notasAlunoB[] = {6.9, 8.9, 5.9, 10};
 		
 		double totalB = 0;
 		for (int i = 0; i < notasAlunoB.length; i++) {
