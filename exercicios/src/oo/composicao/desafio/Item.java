@@ -6,7 +6,6 @@ public class Item {
 	int qtd;
 	
 	public String toString() {
-		return "Produto: " + produto.nome + "\nPreço: " + produto.preco + "\nQuantidade: " + qtd +
-				 "\n---------------------------";
+		return "Produto: " + produto.nome + "\nPreço: " + produto.preco + "\nQuantidade: " + qtd;
 	}
 }

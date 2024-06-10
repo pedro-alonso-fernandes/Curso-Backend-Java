@@ -16,11 +16,40 @@ public class Cliente {
 		this.nome = nome;
 	}
 	
-	void listarCompra() {
-		System.out.println("Compra 1");
-		System.out.println("---------------------------");
-		for(Item item: compras.get(0).itens) {
-			System.out.println(item);
+	void listarCompras() {
+		
+		System.out.println("----------------------------------------");
+		System.out.println("Registro de compras do " + nome);
+		System.out.println("----------------------------------------");
+		System.out.println();
+		for(int i = 0; i < compras.size(); i++) {
+			System.out.println("---------------------------");
+			System.out.println("Compra " + (i + 1));
+			System.out.println("---------------------------");
+			compras.get(i).listarItens();
+			System.out.println();
+			System.out.println();
+			
 		}
+	}
+	
+	double valorTotalCompras() {
+		double total = 0;
+		
+		for(int i = 0; i < compras.size(); i++) {
+			for(int j = 0; j < compras.get(i).itens.size(); j++) {
+				total += precoProduto(i, j) * qtdItens(i, j);
+			}
+		}
+		
+		return total;
+	}
+	
+	double precoProduto(int i, int j) {
+		return compras.get(i).itens.get(j).produto.preco;
+	}
+	
+	int qtdItens(int i, int j) {
+		return compras.get(i).itens.get(j).qtd;
 	}
 }
