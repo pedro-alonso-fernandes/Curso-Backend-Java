@@ -6,6 +6,14 @@ public class Jogador {
 	int x;
 	int y;
 	
+	// Como a classe atual é a classe pai de outras classes, se eu alterar
+	// o construtor da classe atual também vou ter que alterar o construtor das
+	// classes filhas (conforme necessário).
+	Jogador(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
+	
 	boolean atacar(Jogador oponente) {
 		
 		// O método "Math.abs()" deixa um número em módulo, ou seja, ele sempre
