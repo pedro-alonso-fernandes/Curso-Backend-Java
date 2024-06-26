@@ -2,11 +2,11 @@ package oo.heranca.desafio;
 
 public class Camaro extends Carro {
 
-	Camaro(){
+	public Camaro(){
 		this(250);
 	}
 	
-	Camaro(int velocidadeMaxima){
+	public Camaro(int velocidadeMaxima){
 		super(velocidadeMaxima);
 		delta = 15;
 	}

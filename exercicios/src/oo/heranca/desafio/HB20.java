@@ -2,11 +2,11 @@ package oo.heranca.desafio;
 
 public class HB20 extends Carro {
 
-	HB20(){
+	public HB20(){
 		this(160);
 	}
 	
-	HB20(int velocidadeMaxima){
+	public HB20(int velocidadeMaxima){
 		super(velocidadeMaxima);
 	}
 }

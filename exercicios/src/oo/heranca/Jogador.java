@@ -2,19 +2,19 @@ package oo.heranca;
 
 public class Jogador {
 
-	int vida = 100;
-	int x;
-	int y;
+	protected int vida = 100;
+	protected int x;
+	protected int y;
 	
 	// Como a classe atual é a classe pai de outras classes, se eu alterar
 	// o construtor da classe atual também vou ter que alterar o construtor das
 	// classes filhas (conforme necessário).
-	Jogador(int x, int y){
+	protected Jogador(int x, int y){
 		this.x = x;
 		this.y = y;
 	}
 	
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 		
 		// O método "Math.abs()" deixa um número em módulo, ou seja, ele sempre
 		// retornará um número positivo.
@@ -35,7 +35,7 @@ public class Jogador {
 		
 	}
 	
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		
 		switch(direcao) {
 		case NORTE:
@@ -53,5 +53,25 @@ public class Jogador {
 		}
 		
 		return true;
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	
+	public int getY() {
+		return this.y;
+	}
+	
+	public int getVida() {
+		return this.vida;
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	
+	public void setY(int y) {
+		this.y = y;
 	}
 }
