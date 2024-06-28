@@ -18,18 +18,22 @@ public class Pessoa {
 		}
 	}
 	
+	public void comer(Comida comida) {
+		this.peso += comida.getPeso();
+	}
+	
 	// Logo abaixo tem-se um exemplo de polimorfismo estático, onde estão escritos métodos com mesmo
 	// nome e tipo, mas por receberem parâmetros diferentes, tem funcionalidades diferentes. Assim é 
 	// possível reaproveitar código no momento de utilização desses métodos.
-	public void comer(Arroz arroz) {
-		this.peso += arroz.getPeso();
-	}
-	
-	public void comer(Feijao feijao) {
-		this.peso += feijao.getPeso();
-	}
-	
-	public void comer(Sorvete sorvete) {
-		this.peso += sorvete.getPeso();
-	}
+//		public void comer(Arroz arroz) {
+//			this.peso += arroz.getPeso();
+//		}
+//		
+//		public void comer(Feijao feijao) {
+//			this.peso += feijao.getPeso();
+//		}
+//		
+//		public void comer(Sorvete sorvete) {
+//			this.peso += sorvete.getPeso();
+//		}
 }
