@@ -21,6 +21,8 @@ public class CarroTeste {
 		System.out.println("Camaro: " + camaro.velocidadeAtual() + "km/h");
 		
 		hb20.acelerar();
+		
+		camaro.ligarTurbo();
 		camaro.acelerar();
 		
 		System.out.println("------------------------");
