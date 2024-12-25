@@ -39,6 +39,10 @@ public class CarroTeste {
 		hb20.frear();
 		
 		System.out.println("------------------------");
+		System.out.println(camaro.velocidadeDoAr());
+		
+		
+		System.out.println("------------------------");
 		System.out.println("HB20: " + hb20.velocidadeAtual() + "km/h");
 		System.out.println("Camaro: " + camaro.velocidadeAtual() + "km/h");
 		

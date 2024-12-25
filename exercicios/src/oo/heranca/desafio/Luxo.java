@@ -10,4 +10,11 @@ public interface Luxo {
 	// e "abstract" por padrão.
 	void ligarAr();
 	void desligarAr();
+	
+	// É possível definir um método com um valor padrão dentro de uma interface. Assim, a classe
+	// em que essa interface for implementada, não será obrigada a definir esse método, podendo utilizar
+	// o valor padrão.
+	default int velocidadeDoAr() {
+		return 1;
+	}
 }
