@@ -1,6 +1,6 @@
 package oo.polimorfismo;
 
-public class Comida {
+public abstract class Comida {
 
 	// Ao criar a classe "Comida" consigo reutilizar todo o código relacionado ao peso
 	// de qualquer comida (incluindo o método "comer" da classe "Pesssoa"). Isso é um exemplo
