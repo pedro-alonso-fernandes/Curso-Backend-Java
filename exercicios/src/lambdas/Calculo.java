@@ -1,6 +1,6 @@
 package lambdas;
 
-// Uma interface funcional é uma interface que possui apenas um método.
+// Uma interface funcional é uma interface que possui apenas um método (Exceto métodos default e static).
 @FunctionalInterface 
 
 // Obs: As anotações servem para adicionar validações no código. Ex:
@@ -9,4 +9,12 @@ package lambdas;
 public interface Calculo {
 	
 	double executar(double a, double b);
+	
+	default String legal() {
+		return "legal";
+	}
+	
+	static String muitoLegal() {
+		return "muito legal";
+	}
 }
