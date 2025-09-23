@@ -9,6 +9,7 @@ public class Predicado {
 		Predicate<Produto> isCaro =		// Quando algo retorna um boleano, é comum colocar "is" no seu nome
 				prod -> (prod.preco * (1 - prod.desconto)) > 800; 
 		Produto produto = new Produto("Notebook", 4000, 0.40);
+		// O método "test" executa o "Predicate"
 		System.out.println(isCaro.test(produto));
 	}
 }
